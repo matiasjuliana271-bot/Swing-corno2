@@ -1,25 +1,135 @@
-<div class="card alerta">
-  <h2>Formas de Entrada</h2>
-  <p>
-    Escolha abaixo a opção que corresponde ao seu perfil.
-    Todas as solicitações passam por verificação.
-  </p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupo WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0e0e0e;
+      color: #eaeaea;
+      line-height: 1.7;
+    }
+    header {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f5132, #0a0a0a);
+    }
+    header h1 { font-size: 2.6rem; margin-bottom:10px; }
+    header p { max-width:600px; margin:auto; color:#ccc; }
 
-  <a
-    href="https://wa.me/5521982859872?text=Olá,%20sou%20solteiro%20e%20gostaria%20de%20entrar%20no%20grupo.%20Estou%20ciente%20da%20taxa%20de%20R$%209,90."
-    class="btn"
-    target="_blank"
-    style="margin-bottom:15px; display:block; text-align:center;"
-  >
-    Sou solteiro – taxa R$ 9,90
-  </a>
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
 
-  <a
-    href="https://wa.me/5521982859872?text=Olá,%20somos%20um%20casal%20e%20gostaríamos%20de%20entrar%20no%20grupo.%20Podemos%20enviar%20áudio%20para%20confirmação."
-    class="btn"
-    target="_blank"
-    style="background:#ffffff;color:#000; display:block; text-align:center;"
-  >
-    Sou casal – confirmação por áudio
-  </a>
-    </div>
+    .card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h2 { color:#25d366; margin-bottom:10px; }
+    .card p { margin-bottom:20px; }
+
+    .alerta { grid-column: 1 / -1; border-left:6px solid #25d366; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 16px 34px;
+      background: #25d366;
+      color: #000;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .btn.casais {
+      background: #ffffff;
+      color: #000;
+    }
+
+    footer {
+      text-align:center;
+      padding:30px;
+      font-size:0.9rem;
+      color:#999;
+      background:#070707;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Grupo WhatsApp</h1>
+  <p>Comunidade adulta com foco em respeito, diálogo e consentimento.</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>Sobre o Grupo</h2>
+    <p>
+      Grupo privado destinado a adultos interessados em conversar,
+      trocar experiências e aprender mais sobre relacionamentos consensuais.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Regras Básicas</h2>
+    <p>
+      ✔ Apenas maiores de 18 anos<br>
+      ✔ Respeito absoluto<br>
+      ✔ Proibido assédio ou exposição<br>
+      ✔ Conversas com consentimento
+    </p>
+  </div>
+
+  <div class="card alerta">
+    <h2>Formas de Entrada</h2>
+    <p>
+      Escolha a opção que corresponde ao seu perfil. Todas as solicitações passam por verificação.
+    </p>
+
+    <!-- PIX Solteiro -->
+    <p>💳 PIX: Pagamento único de R$ 9,90 (a chave será enviada no WhatsApp)</p>
+    <a
+      href="https://wa.me/5521982859872?text=Olá,%20sou%20solteiro%20e%20quero%20entrar%20no%20grupo.%20Pagamento%20via%20PIX%20R$%209,90."
+      class="btn"
+      target="_blank"
+    >
+      Sou solteiro – PIX R$ 9,90
+    </a>
+
+    <!-- Casal com áudio -->
+    <a
+      href="https://wa.me/5521982859872?text=Olá,%20somos%20um%20casal%20e%20queremos%20entrar%20no%20grupo.%20Podemos%20enviar%20áudio%20para%20confirmação."
+      class="btn casais"
+      target="_blank"
+    >
+      Sou casal – confirmação por áudio
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 – Conteúdo informativo | +18
+</footer>
+
+</body>
+</html>
