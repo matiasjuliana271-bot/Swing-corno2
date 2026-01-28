@@ -2,132 +2,79 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Grupo WhatsApp | Conteúdo Adulto</title>
+  <title>Confirmação de Idade</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Fonte moderna -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
+      height: 100vh;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #000000, #1a1a1a);
-      color: #ffffff;
-      min-height: 100vh;
+      background: linear-gradient(135deg, #000, #1a1a1a);
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #fff;
       text-align: center;
     }
-
-    .container {
+    .box {
       background: #111;
       padding: 45px 30px;
       border-radius: 22px;
       max-width: 460px;
-      width: 100%;
       box-shadow: 0 25px 60px rgba(0,0,0,0.6);
     }
-
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
       color: #ff4d4d;
+      margin-bottom: 10px;
     }
-
     p {
-      font-size: 1rem;
       color: #ccc;
       margin-bottom: 30px;
       line-height: 1.6;
     }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
     button {
+      width: 100%;
       padding: 16px;
       border: none;
       border-radius: 40px;
-      font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
-      transition: 0.3s;
+      margin-bottom: 15px;
+      font-size: 1rem;
     }
-
-    .confirmar {
+    .ok {
       background: #25d366;
       color: #000;
     }
-
-    .confirmar:hover {
-      background: #1ebc59;
-      transform: translateY(-2px);
-    }
-
     .sair {
       background: #333;
       color: #fff;
-    }
-
-    .sair:hover {
-      background: #444;
-    }
-
-    footer {
-      margin-top: 25px;
-      font-size: 0.85rem;
-      color: #777;
     }
   </style>
 </head>
 
 <body>
-
-  <div class="container">
+  <div class="box">
     <h1>🔞 Conteúdo Adulto</h1>
-
     <p>
-      Este site é destinado exclusivamente a maiores de 18 anos.
-      Ao continuar, você declara que possui idade legal e concorda
-      em acessar conteúdo informativo para adultos.
+      Este site é destinado apenas a maiores de 18 anos.
+      Ao continuar, você confirma que possui idade legal.
     </p>
 
-    <div class="buttons">
-      <button class="confirmar" onclick="entrarWhatsApp()">
-        Sou maior de 18 anos
-      </button>
-
-      <button class="sair" onclick="sairSite()">
-        Sair
-      </button>
-    </div>
-
-    <footer>
-      Acesso restrito • +18 • Conteúdo informativo
-    </footer>
+    <button class="ok" onclick="entrar()">Sou maior de 18 anos</button>
+    <button class="sair" onclick="sair()">Sair</button>
   </div>
 
   <script>
-    function entrarWhatsApp() {
-      window.location.href =
-        "https://wa.me/5521982859872?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20grupo";
+    function entrar() {
+      window.location.href = "site.html";
     }
-
-    function sairSite() {
+    function sair() {
       alert("Acesso permitido apenas para maiores de 18 anos.");
       window.location.href = "https://www.google.com";
     }
   </script>
-
 </body>
 </html>
